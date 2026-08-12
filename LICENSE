@@ -1,0 +1,22 @@
+GNU LESSER GENERAL PUBLIC LICENSE
+Version 2.1, February 1999
+
+Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+This is the license covering the zeoLibrary wrapper code
+(zeolibrary/src/zeo/library/*, ZeoReader/ZeoNight/ZeoSlice/ZeoStream).
+
+The bundled Zeo Data Decoder (zeolibrary/src/com/myzeo/decoder/*)
+is covered by a separate BSD-3-Clause license — see LICENSE-BSD.
+
+The full text of the LGPL 2.1 is available at:
+https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
+
+In brief: this library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public License as
+published by the Free Software Foundation; either version 2.1 of the
+License, or (at your option) any later version. It is distributed in
+the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.

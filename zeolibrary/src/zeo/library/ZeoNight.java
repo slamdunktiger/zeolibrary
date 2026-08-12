@@ -289,8 +289,8 @@ indicates they entered no rating.
 	 * convert string to date
 	 */
 	private Date getDate(String input, boolean simple) {
-		if(input == "") {
-			 return null;
+		if(input == null || input.isEmpty()) {
+		 return null;
 		}
 		DateFormat stampFormat;
 		if(simple) {

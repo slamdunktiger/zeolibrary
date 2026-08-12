@@ -1,0 +1,23 @@
+# --- build artifacts ---
+*.class
+*.jar
+/distribution/
+/build/
+/bin/
+/zeolibrary/lib/
+*.zip
+
+# --- prebuilt native / binary blobs that should never be version-controlled ---
+*.dll
+*.so
+*.jnilib
+*.img
+*.mp3
+*.doc
+
+# --- OS / editor ---
+.DS_Store
+*.swp
+*~
+.idea/
+*.iml

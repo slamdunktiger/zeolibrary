@@ -9,7 +9,7 @@ You can use this library for either reading and analysing the .csv files exporte
 
 ZeoStream
 ==========
-Stream live data from the serial port of your Zeo Bedside Display (note: company went out of business). For the correct hardware setup follow the instructions at [Zeo Raw Data Library - Getting Started](http://www.sleepstreamonline.com/rdl/starting.html). It boils down to installing the 2.6.3R firmware, and slightly modifying a FTDI cable. 
+Stream live data from the serial port of your Zeo Bedside Display (**note: Zeo, Inc. is out of business — hardware, firmware, and drivers are no longer available**). For the historical hardware setup, see the [Zeo Raw Data Library - Getting Started](http://www.sleepstreamonline.com/rdl/starting.html) (link likely dead; archived copies may exist). It boiled down to installing the 2.6.3R firmware and slightly modifying a FTDI cable. The live-stream path relies on the legacy RXTX serial library and is unmaintained.
 
 About every second a ZeoSlice object is read and communicates current raw brainwave data and processed frequency bin data. About every 30 seconds the Sleep Manager communicates the average current sleep stage.
 
@@ -33,9 +33,15 @@ Install
 =======
 
 1.  Download latest zeolibrary zip file in [releases](https://github.com/evsc/zeoLibrary/releases)
-2.  Download [Processing](http://processing.org/download/?processing)
-3.  Install zeolibrary by following this [guide](http://www.learningprocessing.com/tutorials/libraries/) 
-4.  Open Processing and open some of the zeolibrary examples via File>Examples>Contributed Libaries>Zeolibary 
+2.  Download [Processing](https://processing.org/download/) (works with 2.2.1 and 3.x)
+3.  Install zeolibrary by following this [guide](https://github.com/processing/processing/wiki/How-to-Install-a-Contributed-Library)
+4.  Open Processing and open some of the zeolibrary examples via File>Examples>Contributed Libraries>Zeolibrary
+
+> **Note (2026 audit):** This is a 2014 Google-Code export snapshot; last commit 2014-09-28.
+> The **CSV + `.dat` import/analysis path works** (verified: see `python/` toolkit for a modern
+> Python-3 port of the parser). The **live-serial-stream path is museumware** — the device and
+> its drivers no longer exist. Prebuilt binaries are in `zeolibrary/distribution/`.
+> Canonical upstream: [evsc/zeoLibrary](https://github.com/evsc/zeoLibrary).
 
 LINUX fix, and for other case-dependency issues: Rename the directory inside the 'libraries' directory to 'zeoLibrary', and the .jar file inside zeoLibrary/library to 'zeoLibrary.jar'. 
 

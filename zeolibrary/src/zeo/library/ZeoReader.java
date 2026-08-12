@@ -283,12 +283,16 @@ public class ZeoReader {
 		nights = n;
 		System.out.println("|| \t Imported " + nights + " proper nights");
 	
+		if(nights == 0) {
+			System.out.println("|| 	 No proper nights imported; skipping day-span calculation");
+			return;
+		}
 		Date day0 = new Date(night[0].date.getTime());
 		for(int i=1; i<nights; i++) {
 		    night[i].setDayRelative(day0);
 		}
 		day_span = night[nights-1].day_relative;
-		System.out.println("|| \t from a total span of " + day_span +" days \n");
+		System.out.println("|| 	 from a total span of " + day_span +" days \n");
 	}
 	
 	
@@ -488,12 +492,16 @@ public class ZeoReader {
 		nights = n;
 		System.out.println("|| \t Imported " + nights + " proper nights");
 	
+		if(nights == 0) {
+			System.out.println("|| 	 No proper nights imported; skipping day-span calculation");
+			return;
+		}
 		Date day0 = new Date(night[0].date.getTime());
 		for(int i=1; i<nights; i++) {
 		    night[i].setDayRelative(day0);
 		}
 		day_span = night[nights-1].day_relative;
-		System.out.println("|| \t from a total span of " + day_span +" days \n");
+		System.out.println("|| 	 from a total span of " + day_span +" days \n");
 	}
 	
 	
