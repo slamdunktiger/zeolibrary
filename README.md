@@ -1,6 +1,8 @@
 zeoLibrary
 ==========
 
+**Original author: [raipat](https://github.com/raipat/zeolibrary) — this repository is a fork of `raipat/zeolibrary`, created 2026-09-28. All original credit belongs to raipat; the 2026 audit and Python-3 parser toolkit below were added on top of his work and do not replace his authorship.**
+
 Processing Lib to import, stream and analyse your Zeo Sleep Data
 
 
